@@ -1,0 +1,97 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* USER STYLES */
+
+@font-face {
+  font-family: "SF Pro";
+  src: url(./assets/fonts/SF-Pro-Text-Regular.otf);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "SF Pro", Helvetica, sans-serif;
+  padding: 20px 0px 100px 0px;
+}
+
+.navbar {
+  padding: 4px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid lightgray;
+  border-radius: 35px;
+}
+
+.navbar > li {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.navbar > li:hover {
+  background-color: lightgray;
+}
+
+.code-block {
+  font-family: monospace;
+  background-color: lightgray;
+  padding: 30px 50px;
+  font-size: 16px;
+  border-radius: 45px;
+}
+
+.code-block:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
