@@ -60,6 +60,8 @@ body {
   align-items: center;
   font-family: "SF Pro", Helvetica, sans-serif;
   padding: 20px 0px 100px 0px;
+  background-image: url(/src/assets/images/background.jpg);
+  background-size: cover;
 }
 
 .navbar {
@@ -67,31 +69,67 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   border: 1px solid lightgray;
   border-radius: 35px;
+  color: white;
 }
 
 .navbar > li {
   padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 35px;
+  border-radius: 45px;
   cursor: pointer;
 }
 
-.navbar > li:hover {
-  background-color: lightgray;
+.images {
+  display: flex;
+  gap: 120px;
+}
+
+.images > img {
+  width: 210px;
+  height: auto;
+  opacity: 85%;
 }
 
 .code-block {
   font-family: monospace;
-  background-color: lightgray;
   padding: 30px 50px;
   font-size: 16px;
   border-radius: 45px;
+  color: white;
 }
 
 .code-block:hover {
-  transform: translateY(-2px);
   cursor: pointer;
+}
+
+/* UTILITY */
+
+.glass {
+  background: rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 0.5px solid rgba(255, 255, 255, 0.34);
+}
+
+.dark-glass {
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 0.5px solid rgba(255, 255, 255, 0.34);
+}
+
+.darker-glass {
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 0.5px solid rgba(255, 255, 255, 0.34);
+}
+
+.dark-glass:hover {
+  background: rgba(0, 0, 0, 0.55);
 }
